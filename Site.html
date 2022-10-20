@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="website.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Dianni</title>
+</head>
+<body>
+    <section id="navbar">
+        <div class="bg-wit w-full container-header-nav">
+            <header id="header_nav" class="fixed flex items-center top-0 left-0 right-0 shadow-lg bg-wit h-30 w-full w-full z-40" style="height: 100px;">
+                <div class="container mx-auto">
+                <div class="flex items-center justify-between px-8 lg:px-0">
+                <div class="flex justify-between items-center">
+                <!-- <a href="https://offerte.nl"> -->
+                <img id="logo-offerte" width="140px" height="28px" class="flex-shrink-0" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/logo-wit.svg" alt="Offerte.nl" style="height: 2.5rem;">
+                </a>
+                <div class="menu-block ml-20 flex justify-between">
+                <a href="" class=" text-smaller head-menu-title m-0 w-1/3 font-normal text-t5" style="font-size: 1.125rem;">Aanmelden als partner</a>
+                <a href="" class=" inactive-title text-smaller head-menu-title w-1/3 m-0 font-normal text-t5" style="font-size: 1.125rem;">Populaire categorieën</a>
+                <a href="" class=" inactive-title text-smaller head-menu-title w-1/3 m-0 font-normal text-t5" style="font-size: 1.125rem;">Over ons</a>
+                </div>
+                </div>
+                <button aria-label="Right Align" class="block hamburger menu-button hamburger--collapse" type="button">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                </span>
+                </button>
+                </div>
+                </div>
+                </header>
+
+                <div style="display: none; top: 100px; overflow-y: scroll; max-height: 80vh;" class="header-menu fixed sm:right-0 left-0 right-0 sm:inset-auto bg-wit shadow rounded-b z-50 border-t border-grijs sm:px-12 px-6 py-8 sm:mr-8 lg:mr-24 shadow-2xl sm:shadow">
+                    <div class="sm:flex">
+                    <div class="sm:w-1/2">
+                    <div class="font-bold sm:text-t4 text-t2-2-sm text-nacht mb-4">Partners</div>
+                    <ul class="list-none leading-relaxed">
+                    <li><a class="hvr-underline-from-left-nacht-sm hover:text-nacht hover:no-underline leading-none mb-4 sm:text-body-3 text-body-1-sm text-nacht font-medium" href="/bedrijf-aanmelden">Aanmelden als partner</a></li>
+                    <li><a class="hvr-underline-from-left-nacht-sm hover:text-nacht hover:no-underline leading-none mb-4 sm:text-body-3 text-body-1-sm text-nacht font-medium" href="/veelgestelde-vragen/partners">Veelgestelde vragen</a></li>
+                    <li><a class="btn-yellow-small mt-3 sm:mt-8 inline-block" href="">Inloggen</a></li>
+                    </ul>
+                    </div>
+                    <div class="sm:w-1/2 sm:pl-8 mt-8 sm:mt-0">
+                    <div class="font-bold sm:text-t4 text-t2-2-sm text-nacht mb-4">Over ons</div>
+                    <ul class="list-none leading-relaxed">
+                    <li><a class="hvr-underline-from-left-nacht-sm hover:text-nacht hover:no-underline leading-none mb-4 sm:text-body-3 text-body-1-sm text-blue " href="https://offerte.nl/over-ons">Over ons</a></li>
+                    <li><a class="hvr-underline-from-left-nacht-sm hover:text-nacht hover:no-underline leading-none mb-4 sm:text-body-3 text-body-1-sm text-blue " href="https://offerte.nl/categorieen">Categorieën</a></li>
+                    <li><a class="hvr-underline-from-left-nacht-sm hover:text-nacht hover:no-underline leading-none mb-4 sm:text-body-3 text-body-1-sm text-blue " href="https://offerte.nl/het-team">Het team</a></li>
+                    <li><a class="hvr-underline-from-left-nacht-sm hover:text-nacht hover:no-underline leading-none mb-4 sm:text-body-3 text-body-1-sm text-blue " href="https://offerte.nl/veelgestelde-vragen">Veelgestelde vragen</a></li>
+                    </ul>
+                    </div>
+                    <div></div>
+                    </div>
+                    <hr class="my-6 border-grijs border-t-2">
+                    <div class="sm:flex sm:items-center bg-pills-smallest sm:justify-between bg-lucht rounded sm:px-12 px-4 py-4">
+                    <div class="text-wit sm:text-support text-t2-sm sm:mr-8 mb-4 sm:mb-0 text-center sm:text-left sm:max-width-200">Stuur ons een WhatsApp bericht voor snel contact</div>
+                    <div class="flex">
+                    <a target="_blank" rel="noopener" class="btn-yellow-large flex items-center leading-none sm:m-0 mx-auto" href="https://wa.me/31643845908?text=Ik%20heb%20een%20vraag%20over%20OfferteNL">
+                    <svg class="h-8 fill-wit mr-6" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="a" d="m50 80c-3.4.1-6.8-.4-9.9-1.9-2.3-1.1-4.5-1.1-6.9-.4-3.3 1-6.8 1.6-10.1 2.6-2 .5-2.7 0-2.2-2.1 0-.1 0-.2.1-.3 2.5-8.1 1.9-16.1.2-24.5-3.2-15.4 9.4-31.5 24.6-33.6 17.1-2.4 33 10.3 33.5 29.3.6 18.2-13.3 30.8-29.3 30.9m.1-6.6c6.1-.1 11.4-2.2 15.8-6.6 8.2-8.2 9.3-21.2 2.6-30.8s-18.8-12.6-28.9-7.3c-10.2 5.4-15.3 17.9-11.1 28.9 1.6 4.1 2 7.7.8 11.7-.7 2.2-.2 3 2.1 2.2 3.7-1.4 7.4-1.6 11.1.5 2.3 1.4 5 1.5 7.6 1.4"></path><clipPath id="b"><use xlink:href="#a"></use></clipPath><clipPath id="c"><use xlink:href="#d"></use></clipPath><path id="d" d="m57.2 64.4c-2.7.1-5.1-.8-7.2-2-6.6-3.8-12.3-8.7-14.7-16.3-1.3-4-.2-7.1 3-9.6.8-.7 1.6-1.2 2.7-.5 2.1 1.2 3.7 7.5 2.4 9.6-1 1.5-1 2.7.1 4.1 1.7 2.1 3.7 3.9 5.8 5.6 2.2 1.8 4.4 3.2 6.9.3 1.1-1.2 7.9.4 8.8 1.9.7 1 .3 1.9-.2 2.8-1.8 2.7-4.3 4.3-7.6 4.1"></path></defs><use clip-rule="evenodd" xlink:href="#a"></use><path clip-path="url(#b)" d="m5.2 4.1h89.6v91.9h-89.6z"></path><use clip-rule="evenodd" xlink:href="#d"></use><path clip-path="url(#c)" d="m19.2 20.2h61.5v59.7h-61.5z"></path></svg> Stuur WhatsApp
+                    </a>
+                    </div>
+                    </div>
+                    </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="mt-30 flex items-center bg-cover bg-no-webp bg-webp bg-img  bg-transparent-pills bg-transparent relative px-8 md:px-0 py-12 lg:py-20">
+            <div class="container mx-auto flex justify-between items-center md:mb-0 sm:mb-24 mb-10">
+            <div data-aos="fade-right" class="lg:w-1/3 relative head-text aos-init aos-animate">
+            <h2 class="main-text text-wit font-bold sm:text-t1 text-t1-sm ">Wij helpen <br>MKB groeien</h2>
+            <h1 class="text-wit font-medium sm:heading-left pb-6 sm:text-t4 text-body-1-sm">Welkom bij Offerte.nl</h1>
+            <a data-aos="fade-right" data-aos-delay="600" class="text-button sm:inline-block hidden mt-4 sm:mt-8 btn-white-large aos-init aos-animate" href="https://offerte.nl/categorieen">
+            offerte aanvragen?
+            </a>
+            </div>
+            </div>
+            </div>
+
+            <div class="bg-lucht rounding-bottom-left-lg rounding-bottom-right-lucht flex items-center md:py-24 py-8">
+                <div class="container mx-auto">
+                <div class="md:flex ">
+                <div data-aos="fade-right" data-aos-delay="600" class="md:w-5/12 md:pr-12 px-8 md:px-0 aos-init aos-animate">
+                <div class="flex items-center my-4">
+                <div class="w-24 mr-8">
+                <img width="180px" class="flex-shrink-0" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/company/1-wit.svg" alt="">
+                </div>
+                <div class="text-wit">
+                <div class="font-bold sm:text-t5 text-t2-sm  mb-2">Het overzicht in handen</div>
+                <div class="sm:text-body-4 text-body-1-sm">Beheer al je aanvragen simpel vanuit het dashboard</div>
+                </div>
+                </div>
+                <div class="flex items-center mt-8 md:mt-16">
+                <div class="w-24 sm:mr-8 mr-10">
+                <img width="180px" class="flex-shrink-0" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/company/2-wit.svg" alt="">
+                </div>
+                <div class="text-wit">
+                <div class="font-bold sm:text-t5 text-t2-sm mb-2">Hoge kwaliteit offerteaanvragen</div>
+                <div class="sm:text-body-4 text-body-1-sm">Wij zorgen voor telefonisch gekwalificeerde offerteaanvragen.</div>
+                </div>
+                </div>
+                </div>
+                <div id="register" class="md:w-7/12">
+                <div data-aos="fade-left" data-aos-delay="300" class="form-position largest-form card lg:p-8 p-6 md:static absolute t-96 mx-auto inset-x-0 aos-init aos-animate">
+                <form method="POST" action="https://offerte.nl/bedrijf-aanmelden/process" accept-charset="UTF-8" class="form-horizontal company-reg" id="company-register"><input name="_token" type="hidden" value="nHnh5x1VbU8kDPMiJ3PhYguPN50Jacs6MLzSDuYs">
+                <div class="text-nacht font-bold sm:text-t4 text-t2-2-sm md:pl-8 md:text-left text-center">Groeien met je onderneming?</div>
+                <div class="text-body-1-sm font-medium mb-8 md:pl-8  md:text-left text-center">Ontvang gratis meer informatie over de
+                <br class="md:hidden block"> mogelijkheden bij Offerte.nl.</div>
+                <div class="shadow-none  sm:rounded rounded-b-none sm:px-8 px-4 sm:py-6 py-2  bg-grijs mb-0 md:mb-8">
+                <div class="lg:flex lg:items-center pb-4 lg:py-2 relative">
+                <label id="label-icon" class="control-label lg:w-1/3 mr-4 sm:text-t5 text-t2-sm" for="product_id">Vakgebied</label>
+                <div class="relative lg:w-2/3 sm:mt-0 mt-2">
+                <img id="partner_icon" class="icon-input-form z-10 w-4 h-4 flex-shrink-0 svg-img invisible" src="null" alt="Partner Logo">
+                <select class="text-small-sm pl-12 form-input-wit font-medium" name="product_id" id="product_id">
+                <option value="">Kies een vakgebied...</option>
+                <option value="117" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/accountant_icon.svg"> Accountant</option>
+                <option value="33" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/advocaat_icon.svg"> Advocaat</option>
+                <option value="28" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/airco_icon.svg"> Airco</option>
+                <option value="42" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/alarmsysteem_icon.svg"> Alarmsysteem</option>
+                <option value="131" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/asbest_verwijderen_icon.svg"> Asbest Verwijderen</option>
+                <option value="52" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/boekhouder_icon.svg"> Boekhouder</option>
+                <option value="116" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/brandbeveiliging_icon.svg"> Brandbeveiliging</option>
+                <option value="71" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/callcenter_icon.svg"> Callcenter</option>
+                <option value="129" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/dakkapel_icon.svg"> Dakkapel</option>
+                <option value="148" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/"> Dakwerken</option>
+                <option value="123" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/debiteurenbeheer_icon.svg"> Debiteurenbeheer</option>
+                <option value="118" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/desinfectie_icon.svg"> Desinfectie</option>
+                <option value="119" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/factoring_icon.svg"> Factoring</option>
+                <option value="141" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/"> Gevelreiniging</option>
+                <option value="121" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/incassobureau_icon.svg"> Incassobureau</option>
+                <option value="125" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/infrarood_panelen_icon.svg"> Infrarood Panelen</option>
+                <option value="126" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/isolatie_icon.svg"> Isolatie</option>
+                <option value="91" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/koffie_icon.svg"> Koffie</option>
+                <option value="128" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/kozijnen_icon.svg"> Kozijnen</option>
+                <option value="124" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/laadpaal_icon.svg"> Laadpaal</option>
+                <option value="47" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/makelaar_icon.svg"> Makelaar</option>
+                <option value="102" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/mediation_icon.svg"> Mediation</option>
+                <option value="18" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/notaris_icon.svg"> Notaris</option>
+                <option value="95" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/online_marketing_icon.svg"> Online marketing</option>
+                <option value="103" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/payrolling_icon.svg"> Payrolling</option>
+                <option value="122" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/salarisadministratie_icon.svg"> Salarisadministratie</option>
+                <option value="72" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/schoonmaak_icon.svg"> Schoonmaak</option>
+                <option value="147" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/"> Terrasoverkapping</option>
+                <option value="45" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/uitvaart_icon.svg"> Uitvaart</option>
+                <option value="127" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/verhuisbedrijf_icon.svg"> Verhuisbedrijf</option>
+                <option value="120" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/warmtepomp_icon.svg"> Warmtepomp</option>
+                <option value="90" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/waterkoeler_icon.svg"> Waterkoeler</option>
+                <option value="130" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/waterontharder_icon.svg"> Waterontharder</option>
+                <option value="32" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/webdesign_icon.svg"> Webdesign</option>
+                <option value="48" data-icon="https://dum4ea6o0zrjv.cloudfront.net/app/public/product_icons/zonnepanelen_icon.svg"> Zonnepanelen</option>
+                </select>
+                </div>
+                </div>
+                <div class="lg:flex lg:items-center pb-4 lg:py-2">
+                <label class="control-label lg:w-1/3 mr-4 sm:text-t5 text-t2-sm" for="companyname">Bedrijfsnaam</label>
+                <div class="relative lg:w-2/3 sm:mt-0 mt-2">
+                <img class="icon-input-form z-10 w-4 h-4" src="https://dum4ea6o0zrjv.cloudfront.net/img/icons/form_surname.svg" alt="">
+                <input class="text-small-sm pl-12 form-input-wit " type="text" name="companyname" id="companyname" value="" placeholder="Vul de bedrijfsnaam in">
+                </div>
+                </div>
+                <div class="lg:flex lg:items-center pb-4 lg:py-2">
+                <label class="control-label lg:w-1/3 mr-4 sm:text-t5 text-t2-sm" for="lastname">Jouw naam</label>
+                <div class="relative lg:w-2/3 sm:mt-0 mt-2">
+                <img class="icon-input-form z-10 w-4 h-4" src="https://dum4ea6o0zrjv.cloudfront.net/img/icons/form_name.svg" alt="">
+                <input class="text-small-sm pl-12 form-input-wit " type="text" name="lastname" id="lastname" value="" placeholder="Vul je naam in">
+                </div>
+                </div>
+                <div class="lg:flex lg:items-center pb-4 lg:py-2">
+                <label class="control-label lg:w-1/3 mr-4 sm:text-t5 text-t2-sm" for="email">E-mailadres</label>
+                <div class="relative lg:w-2/3 sm:mt-0 mt-2">
+                <img class="icon-input-form z-10 w-4 h-4" src="https://dum4ea6o0zrjv.cloudfront.net/img/icons/form_mail.svg" alt="">
+                <input class="text-small-sm pl-12 form-input-wit " type="email" name="email" id="email" value="" placeholder="Vul je e-mailadres in">
+                <img id="check-email" class="hidden icon-phone-checked z-10 w-3 h-3" src="https://dum4ea6o0zrjv.cloudfront.net/img/icons/icon-check.svg" alt="icon-check">
+                <img id="warming-email" class="hidden icon-phone-checked z-10 w-4 h-4" src="https://dum4ea6o0zrjv.cloudfront.net/img/icons/icon-warming.svg" alt="icon-warming">
+                </div>
+                </div>
+                <div id="text-warming-email" class="flex justify-end -mt-2 hidden">
+                <label class="control-label lg:w-1/3 mr-4"></label>
+                <div class="lg:w-2/3 ml-10 text-yellow text-button-sm">Klopt het e-mailadres?</div>
+                </div>
+                <div class="lg:flex lg:items-center pb-4 lg:py-2">
+                <label class="control-label lg:w-1/3 mr-4 sm:text-t5 text-t2-sm" for="phone">Telefoonnummer</label>
+                <div class="relative lg:w-2/3 sm:mt-0 mt-2">
+                <img class="icon-input-form z-10 w-4 h-4" src="https://dum4ea6o0zrjv.cloudfront.net/img/icons/form_phone.svg" alt="">
+                <input class="text-small-sm pl-12 form-input-wit " type="tel" name="phone" id="phone" value="" placeholder="Vul je telefoonnummer in">
+                <img id="check" class="hidden icon-phone-checked z-10 w-3 h-3" src="https://dum4ea6o0zrjv.cloudfront.net/img/icons/icon-check.svg" alt="icon-check">
+                <img id="warming" class="hidden icon-phone-checked z-10 w-4 h-4" src="https://dum4ea6o0zrjv.cloudfront.net/img/icons/icon-warming.svg" alt="icon-warming">
+                </div>
+                </div>
+                <div id="text-warming" class="flex justify-end -mt-2 hidden">
+                <label class="control-label lg:w-1/3 mr-4"></label>
+                <div class="lg:w-2/3 ml-10 text-yellow text-button-sm">Klopt het telefoonnummer?</div>
+                </div>
+                </div>
+                <div class="res-sub sm:block captcha-bottom">
+                <div style="display: none" class="error-captcha text-rood text-small-sm mb-2">
+                Vink alsjeblieft het Captcha vakje aan
+                </div>
+                <div class="flex-none-res flex flex-wrap items-center lg:justify-between justify-center text-center lg:text-left">
+                <div class="g-recaptcha flex justify-center md:mb-2" data-sitekey="6Ld6GdEZAAAAAOBIlTxb3tLExl3VD7BaBeZ5eUlu"></div>
+                <div class="md:mb-2 sm:px-8 px-4">
+                <button type="submit" class="res-submit-btn btn-yellow-large">Aanmelden als partner</button>
+                </div>
+                </div>
+                </div>
+                </form>
+                </div>
+                <div class="flex flex-wrap md:flex-nowrap md:items-center justify-center md:py-0 py-8 mt-20 logos-content">
+                <img class="opacity-50 h-16 md:h-18 mx-auto md:mx-4 md:block hidden" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/company/de.svg" alt="Douwe Egberts">
+                <img class="opacity-50 h-16 md:h-18 mx-auto md:mx-4" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/company/dela.svg" alt="dela">
+                <img class="opacity-50 h-16 md:h-18 mx-auto md:mx-4" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/company/verisure.svg" alt="verisure">
+                <img class="opacity-50 h-16 md:h-18 mx-auto md:mx-4 md:block hidden" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/cpc/partners/Koffie_GIO.svg" alt="Gio">
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+
+                <div style="height: 950px; width: 1px" class="md:hidden block"></div>
+    </section>
+
+    <section>
+        <div id="top-category" class="mx-auto relative rounded-t-lg sm:rounded-none bg-wit sm:pb-4 sm:pb-0 sm:p-0">
+            <div class="sm:py-10 mt-3">
+            <div class="mx-auto sm:pt-0 sm:pt-10">
+            <div class="text-yellow text-support-sm sm:text-support pb-2 text-center">Zoek op categorie</div>
+            <div class="text-blue sm:text-t3 text-t2-2-sm pb-0 text-center">Populaire categorieën</div>
+            <div id="top-category-change" class="sm:mt-20 mt-8 mb-6 sm:mb-0 sm:px-0 flex justify-center flex-wrap ">
+            <div id="containerCategories" class="less-cat categories-list grid lg:grid-cols-5 md:grid-cols-3 grid-cols-none  justify-center container">
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-117" href="https://offerte.nl/accountant" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Accountant</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-33" href="https://offerte.nl/advocaat" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Advocaat</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-28" href="https://offerte.nl/airco" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Airco</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-42" href="https://offerte.nl/alarmsysteem" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Alarmsysteem</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-131" href="https://offerte.nl/asbest-verwijderen" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Asbest Verwijderen</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-52" href="https://offerte.nl/boekhouder" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Boekhouder</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-116" href="https://offerte.nl/brandbeveiliging" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Brandbeveiliging</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-71" href="https://offerte.nl/callcenter" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Callcenter</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-129" href="https://offerte.nl/dakkapel" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Dakkapel</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-148" href="https://offerte.nl/dakwerken" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Dakwerken</span>
+             <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-123" href="https://offerte.nl/debiteurenbeheer" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Debiteurenbeheer</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-118" href="https://offerte.nl/desinfectie" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Desinfectie</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-119" href="https://offerte.nl/factoring" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Factoring</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-141" href="https://offerte.nl/gevel-reiniging" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Gevelreiniging</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-121" href="https://offerte.nl/incassobureau" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Incassobureau</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-125" href="https://offerte.nl/infrarood-panelen" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Infrarood Panelen</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-126" href="https://offerte.nl/isolatie" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Isolatie</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-91" href="https://offerte.nl/koffie" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Koffie</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-128" href="https://offerte.nl/kozijnen" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Kozijnen</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-124" href="https://offerte.nl/laadpaal" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Laadpaal</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-47" href="https://offerte.nl/makelaar" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Makelaar</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-102" href="https://offerte.nl/mediation" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Mediation</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-18" href="https://offerte.nl/notaris" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Notaris</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-95" href="https://offerte.nl/online-marketing" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Online marketing</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-103" href="https://offerte.nl/payrolling" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Payrolling</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-122" href="https://offerte.nl/salarisadministratie" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Salarisadministratie</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-72" href="https://offerte.nl/schoonmaak" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Schoonmaak</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-147" href="https://offerte.nl/terrasoverkapping" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+             <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Terrasoverkapping</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-45" href="https://offerte.nl/uitvaart" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Uitvaart</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-127" href="https://offerte.nl/verhuisbedrijf" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Verhuisbedrijf</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-120" href="https://offerte.nl/warmtepompen" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Warmtepomp</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-90" href="https://offerte.nl/waterkoeler" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Waterkoeler</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-130" href="https://offerte.nl/waterontharder" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Waterontharder</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-32" href="https://offerte.nl/webdesign" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Webdesign</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            <div class="categories cursor-pointer sm:mb-4">
+            <div class="container-svg aos-init aos-animate" data-aos="zoom-out">
+            <a id="category-48" href="https://offerte.nl/zonnepanelen" class="categories-category-wit hover-navigate sm:text-body-3 text-body-1-sm mr-1 pl-6 px-3 hover:shadow hover:font-bold">
+            <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 120.4 87.4" xmlns="http://www.w3.org/2000/svg"><path d="m102.1 86.9h-84c-9.7 0-17.5-7.9-17.5-17.6v-51.1c0-9.7 7.9-17.6 17.6-17.6h84c9.7 0 17.6 7.9 17.6 17.6v51.1c-.1 9.7-8 17.6-17.7 17.6zm-84-80.3c-6.4 0-11.6 5.2-11.6 11.6v51.1c0 6.4 5.2 11.6 11.6 11.6h84c6.4 0 11.6-5.2 11.6-11.6v-51.1c0-6.4-5.2-11.6-11.6-11.6z"></path><path d="m3.4 19.8h112.7v5.9h-112.7z"></path><path d="m105.4 16.3h-28.5c-1.6 0-3-1.3-3-3s1.3-3 3-3h28.5c1.6 0 3 1.3 3 3s-1.4 3-3 3z"></path><path d="m48.1 70.6c-.7 0-1.3-.2-1.9-.7l-18.5-14.9c-.7-.6-1.1-1.4-1.1-2.3s.4-1.8 1.1-2.3l18.6-14.6c1.3-1 3.2-.8 4.2.5s.8 3.2-.5 4.2l-15.7 12.2 15.7 12.7c1.3 1 1.5 2.9.4 4.2-.6.7-1.4 1-2.3 1z"></path><path d="m74.6 70.6c-.9 0-1.7-.4-2.3-1.1-1-1.3-.8-3.1.4-4.2l15.7-12.7-15.6-12.2c-1.3-1-1.5-2.9-.5-4.2s2.9-1.5 4.2-.5l18.5 14.6c.7.6 1.1 1.4 1.1 2.3s-.4 1.8-1.1 2.3l-18.5 15.1c-.6.4-1.2.6-1.9.6z"></path><path d="m57 70.6c-.3 0-.6 0-.8-.1-1.6-.5-2.5-2.1-2-3.7l8.7-29.7c.5-1.6 2.1-2.5 3.7-2s2.5 2.1 2 3.7l-8.7 29.7c-.4 1.3-1.6 2.1-2.9 2.1z"></path></svg> <span class="pl-3">Zonnepanelen</span>
+            <img class="sm:hidden block category-arrow" src="https://dum4ea6o0zrjv.cloudfront.net/img/partnerportal/down.svg" alt="">
+            </a>
+            </div>
+            </div>
+            </div>
+            <a href="https://offerte.nl/categorieen" class="btn-simple-small mx-auto mt-4 sm:hidden block px-8">
+            <span class="px-4 text-body-1-sm">
+            Bekijk alles
+            </span>
+            </a>
+            </div>
+            </div>
+            </div>
+            </div>
+    </section>
+
+    <section>
+        <div class="sm:py-12 pt-8 md:py-16 md:my-16 my-12 bg-lucht text-wit rounding-bottom-left-lg rounding-top-left-lg rounding-top-right-lucht rounding-bottom-right-lucht-licht bg-pills">
+            <div class="container mx-auto flex md:items-center flex flex-wrap lg:justify-center">
+            <div data-aos="fade-right" class="mx-auto md:w-1/2 px-8 md:px-12 aos-init aos-animate">
+            <div class="font-bold-important sm:text-t3 text-t2-2-sm text-center md:text-left">Wil jij groeien met je bedrijf?</div>
+            <div class="font-medium sm:text-body-3 text-body-1-sm text-center md:text-left mt-3">Meld je nu aan en start met de eerste aanvragen</div>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="300" class="mx-auto md:w-1/2 md:px-12 text-center md:text-right my-8 aos-init aos-animate">
+            <div class="btn-yellow-large inline-flex leading-none lg:mr-24" onclick="scrollToForm()">
+            <span class="flex items-center justify-center">
+            Aanmelden als partner
+            <img class="sm:block hidden h-8" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/company/Arrow.svg" alt="arrow-right">
+            </span>
+            </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="hidden sm:block">
+                <div class="sm:pt-32 pb-12 md:pb-20 my-12 sm:bg-lucht sm:text-wit text-nacht rounding-top-left-lg rounding-bottom-left-lg rounding-top-right-lucht rounding-bottom-right-lucht bg-pills-height">
+                <div class="py-8 md:py-12">
+                <div class="container mx-auto md:flex md:items-center">
+                <div class="md:w-1/3 px-8 md:px-0">
+                <div class="text-honing font-bold pb-2 text-support text-center md:text-left">Voor jou zoeken wij</div>
+                <div class="sm:text-wit text-nacht text-t3 font-bold pb-0 text-center md:text-left mb-2">De match die bij jou past</div>
+                <div class="sm:text-wit text-nacht text-body-3 font-medium md:heading-left pb-8 text-center md:text-left">Betrouwbaar en snel</div>
+                <p class="font-medium text-body-4 mt-12 text-center md:text-left">Het vinden van een goed product of betrouwbare dienst kan een hele opgave zijn. Offerte.nl luistert naar jouw specifieke wensen en koppelt je aan gekwalificeerde partners. Altijd betrouwbaar, snel en afgestemd op wat jij nodig hebt.</p>
+                <div class="mt-32 text-wit sm:text-support text-support-sm md:text-left">Bekend van</div>
+                <div class="container flex items-center flex-wrap lg:flex-nowrap mt-4 justify-between">
+                <img class="md:-ml-4 flex-shrink-0 h-12 lg:h-20" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/references/ad.svg" loading="lazy" alt="AD">
+                <img class="flex-shrink-0 h-12 lg:h-20" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/references/veronica.svg" loading="lazy" alt="Radio Veronica">
+                <img class="flex-shrink-0 h-12 lg:h-20" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/references/bnr.svg" loading="lazy" alt="BNR Nieuwsradio">
+                </div>
+                </div>
+                <div class="lg:w-2/3 ml-8 pt-8 px-8 lg:p-0 lg:mb-32">
+                <div class="md:flex hidden md:mb-12">
+                <div data-aos="fade-down-right" class="md:w-1/2 flex justify-center md:justify-start lg:items-center md:px-4 mb-4 md:mb-0 aos-init aos-animate">
+                <img class="match-image fill-wit lg:mx-0 flex-shrink-0 " src="https://dum4ea6o0zrjv.cloudfront.net/img/website/Time-wit.svg" alt="Time">
+                <div class="text-left md:ml-6 h-32 mt-1">
+                <div class="font-bold text-wit text-t2-sm sm:text-t4 mb-4"><div class="leading-6">Soepel, simpel <br> en super snel</div></div>
+                <div class="font-medium text-wit text-body-1-sm sm:text-body-4">Van aanvraag naar eindkeuze is <br> zo gedaan</div>
+                </div>
+                </div>
+                <div data-aos="fade-down-left" data-aos-delay="300" class="md:w-1/2 flex justify-center md:justify-start lg:items-center md:px-4 mb-4 md:mb-0 aos-init aos-animate">
+                <img class="match-image fill-wit lg:mx-0 flex-shrink-0" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/Search-wit.svg" alt="Search">
+                <div class="text-left md:ml-6 h-32 mt-1">
+                <div class="font-bold text-wit text-t2-sm sm:text-t4 mb-4"><div class="leading-6">Transparant</div></div>
+                <div class="font-medium text-wit text-body-1-sm sm:text-body-4">Weet precies waar je aan toe bent</div>
+                </div>
+                </div>
+                </div>
+                <div class="md:flex hidden">
+                <div data-aos="fade-up-right" data-aos-delay="300" class="md:w-1/2 md:flex hidden justify-center md:justify-start lg:items-center md:px-4 mb-4 md:mb-0 aos-init aos-animate">
+                <img class="match-image fill-wit lg:mx-0 flex-shrink-0" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/Vergelijk-wit.svg" alt="Vergelijk">
+                <div class="text-left md:ml-6 h-32 mt-1">
+                <div class="font-bold text-wit text-t2-sm sm:text-t4 mb-4"><div class="leading-6">Direct vergelijken
+                <br> en ontvang de beste deal</div></div>
+                <div class="font-medium text-wit text-body-1-sm sm:text-body-4">Krijg meteen inzicht in het aanbod <br> en de partners</div>
+                </div>
+                </div>
+                <div data-aos="fade-up-left" class="md:w-1/2 flex justify-center md:justify-start lg:items-center md:pl-4 mb-4 md:mb-0 aos-init aos-animate">
+                <img class="match-image fill-wit lg:mx-0 flex-shrink-0" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/Match-wit.svg" alt="Match">
+                <div class="text-left md:ml-6 h-32 mt-1">
+                <div class="font-bold text-wit text-t2-sm sm:text-t4 mb-4"><div class="leading-6">De juiste match persoonlijk voor jou uitgekozen</div></div>
+                <div class="font-medium text-wit text-body-1-sm sm:text-body-4">Vergelijk alleen de partners die bij jouw wensen en budget passen </div>
+                </div>
+                </div>
+                </div>
+                <div class="md:hidden">
+                <div data-aos="fade-down-right" class="md:w-1/2 flex -mb-4 aos-init aos-animate">
+                <img class="h-16 w-32 fill-wit lg:mx-0 flex-shrink-0 " src="https://dum4ea6o0zrjv.cloudfront.net/img/website/Time-wit.svg" alt="Time">
+                <div class="text-left h-32">
+                <div class="font-bold text-wit text-t2-sm mb-2">Soepel, simpel en super snel</div>
+                <div class="font-medium text-wit text-body-1-sm ">Van aanvraag naar eindkeuze
+                <br> is zo gedaan</div>
+                </div>
+                </div>
+                <div data-aos="fade-up-left" class="md:w-1/2 flex aos-init aos-animate">
+                <img class="h-16 w-32 fill-wit lg:mx-0 flex-shrink-0" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/Vergelijk-wit.svg" alt="Vergelijk">
+                <div class="text-left h-32">
+                <div class="font-bold text-wit text-t2-sm mb-2">
+                Direct vergelijken
+                <br>
+                en ontvang de beste deal</div>
+                <div class="font-medium text-wit text-body-1-sm ">
+                Krijg inzicht in het aanbod en
+                <br> onze partners
+                </div>
+                </div>
+                </div>
+                <div data-aos="fade-down-left" data-aos-delay="300" class="md:w-1/2 flex -mb-4 aos-init aos-animate">
+                <img class="h-16 w-32 fill-wit lg:mx-0 flex-shrink-0" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/Search-wit.svg" alt="Search">
+                <div class="text-left h-32">
+                <div class="font-bold text-wit text-t2-sm mb-2">Transparant</div>
+                <div class="font-medium text-wit text-body-1-sm ">Weet precies waar je aan toe bent</div>
+                </div>
+                </div>
+                <div data-aos="fade-down-left" data-aos-delay="300" class="md:w-1/2 flex aos-init aos-animate">
+                <img class="h-16 w-32 fill-wit lg:mx-0 flex-shrink-0" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/Match-wit.svg" alt="Match">
+                <div class="text-left h-32">
+                <div class="font-bold text-wit text-t2-sm mb-2">De juiste match persoonlijk voor jou uitgekozen</div>
+                <div class="font-medium text-wit text-body-1-sm ">Vergelijk alleen de partners die bij jouw wensen en budget passen</div>
+                </div>
+                </div>
+                </div> </div>
+                </div>
+                </div>
+                </div>
+                </div>
+    </section>
+
+    <section>
+        <div class="py-12">
+            <div class="text-center text-honing  text-support font-bold pb-4 text-lg">Hoe het werkt</div>
+            <div class="text-nacht text-center sm:text-t3 text-t2-2-sm font-bold-important pb-6 px-4 leading-none">Vrijblijvende offertes aanvragen en vergelijken</div>
+            <div class="container mx-auto mt-0 md:mt-12">
+            <div class="flex justify-between relative">
+            <div class="back-line" style="background-color: rgb(186, 220, 237);"></div>
+            <div class="w-1/4 relative text-center step-hover-1">
+            <lottie-player data-aos="fade-up" id="lottie-player-step-1" class="flex-shrink-0 mx-auto w-16 h-16 sm:h-32 sm:w-56 mb-8 sm:mb-0 aos-init aos-animate" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/animaties/Envelop.json" background="transparent" speed="3" loop=""></lottie-player>
+            <div data-aos="fade-up" data-aos-delay="300" class="hidden sm:block font-bold text-body-3 mb-12 aos-init aos-animate" style="font-weight: 500;">Wat heb je nodig? <br> Vul je wensen in</div>
+            <div id="steps-step-1" class="step-dots completed-dot" style="font-weight: 500;"></div>
+            </div>
+            <div class="w-1/4 relative text-center step-hover-2">
+            <lottie-player data-aos="fade-up" id="lottie-player-step-2" class="flex-shrink-0 mx-auto w-16 h-16 sm:h-32 sm:w-56 mb-8 sm:mb-0 aos-init aos-animate" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/animaties/Stamp.json" background="transparent" speed="3" loop=""></lottie-player>
+            <div data-aos="fade-up" data-aos-delay="300" class="hidden sm:block font-bold text-body-3 mb-12 aos-init aos-animate" style="font-weight: 500;">Wij checken en<br> matchen je</div>
+            <div id="steps-step-2" class="step-dots completed-dot" style="font-weight: 500;"></div>
+            </div>
+            <div class="w-1/4 relative text-center step-hover-3">
+            <lottie-player data-aos="fade-up" id="lottie-player-step-3" class="flex-shrink-0 mx-auto w-16 h-16 sm:h-32 sm:w-56 mb-8 sm:mb-0 aos-init aos-animate" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/animaties/Stars.json" background="transparent" speed="3" loop=""></lottie-player>
+            <div data-aos="fade-up" data-aos-delay="300" class="hidden sm:block font-bold text-body-3 mb-12 aos-init aos-animate" style="font-weight: 500;">Kom in contact<br> en ontvang offertes</div>
+            <div id="steps-step-3" class="step-dots completed-dot" style="font-weight: 500;"></div>
+            </div>
+            <div class="w-1/4 relative text-center step-hover-4">
+            <lottie-player data-aos="fade-up" id="lottie-player-step-4" class="flex-shrink-0 mx-auto w-16 h-16 sm:h-32 sm:w-56 mb-8 sm:mb-0 aos-init aos-animate" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/animaties/Hands.json" background="transparent" speed="3" loop=""></lottie-player>
+            <div data-aos="fade-up" data-aos-delay="300" class="hidden sm:block font-bold text-body-3 mb-12 aos-init aos-animate" style="font-weight: bold;">Akkoord met<br> de offerte</div>
+            <div id="steps-step-4" class="step-dots completed-dot active-dot" style="font-weight: bold;"></div>
+            </div>
+            </div>
+            <div class="flex justify-between px-2 sm:px-12 lg:px-24">
+            <div class="text-step-1 w-full md:w-5/12 3xl:w-1/3" style="display: none;">
+            <div class="px-4 sm:px-8 pt-6 pb-8 bg-aqua rounded mt-8 text-center transition-5 flex flex-wrap justify-center height-responsive-info-desktop">
+            <div class="font-bold-important sm:text-body-1 text-t2-sm mb-2 w-full">Wat heb je nodig?</div>
+            <div class="font-medium sm:text-body-3 text-body-2-sm">Vul je aanvraag verder aan met je persoonlijke wensen.</div>
+            </div>
+            </div>
+            <div class="text-step-2 w-full md:w-5/12 3xl:w-1/3" style="display: none;">
+            <div class="px-4 sm:px-8 pt-6 pb-8 bg-aqua rounded mt-8 text-center transition-5 flex flex-wrap justify-center height-responsive-info-desktop">
+            <div class="font-bold-important sm:text-body-1 text-t2-sm mb-2 w-full">Wij checken en matchen je</div>
+            <div class="font-medium sm:text-body-3 text-body-2-sm">Je aanvraag komt binnen bij ons.. Wij checken of alles in orde is en selecteren de beste partners.</div>
+            </div>
+            </div>
+            <div class="text-step-3 w-full md:w-1/2 3xl:w-1/3" style="display: none;">
+            <div class="px-4 sm:px-8 pt-6 pb-8 bg-aqua rounded mt-8 text-center transition-5 flex flex-wrap justify-center height-responsive-info-desktop">
+            <div class="font-bold-important sm:text-body-1 text-t2-sm mb-2 w-full">Kom in contact en ontvang offertes</div>
+            <div class="font-medium sm:text-body-3 text-body-2-sm">Onze gekwalificeerde partners geven ieder hun offerte en werkwijze. Maak een keuze die bij je past</div>
+            </div>
+            </div>
+            <div class="text-step-4 w-full md:w-2/4 3xl:w-1/3" >
+            <div class="px-4 sm:px-8 pt-6 pb-8 bg-aqua rounded mt-8 text-center transition-5 flex flex-wrap justify-center height-responsive-info-desktop">
+            <div class="font-bold-important sm:text-body-1 text-t2-sm mb-2 w-full">Akkoord met de offerte</div>
+            <div class="font-medium sm:text-body-3 text-body-2-sm">Onze partner neemt het werk voor je uit handen. Laat ons weten hoe je ervaring was en deel het met anderen.</div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+    </section>
+
+    <section>
+        <div class="py-8 md:py-12 px-8 md:px-0">
+            <div class="container mx-auto md:flex md:items-center my-8 md:my-24">
+            <div class="md:w-1/2 flex center-element">
+            <img data-aos="fade-right" class="flex-shrink-0 rounded my-8 md:my-0 aos-init aos-animate" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/over-ons-1.webp" onerror="this.onerror=null; this.src='https://dum4ea6o0zrjv.cloudfront.net/img/website/over-ons-1.jpg'">
+            </div>
+            <div data-aos="fade-left" data-aos-delay="600" class="md:w-1/2 flex end-element center-element aos-init aos-animate">
+            <div class="content-text pl-4">
+            <div class="text-honing font-bold pb-2 text-support-sm sm:text-support">Ben je op zoek naar een product of dienst?</div>
+            <div class="text-blue leading-none text-t2-2-sm  sm:text-t3 mb-2"><span class="font-bold">De best gekwalificeerde partners voor jou</span></div>
+            <div class="text-blue leading-tight text-body-1-sm sm:text-body-4 font-medium mb-12">Wanneer je een aanvraag bij ons doet krijg je meer dan alleen gekwalificeerde partners. Naast een grondige check op certificaten, vakkennis en prijs, kijken we ook naar het menselijk aspect. Jouw aanvraag is uniek en wordt met de nodige zorg behandeld.</div>
+            <a href="https://offerte.nl/categorieen" class=" flex justify-center btn-simple-large">Doe een aanvraag</a>
+            </div>
+            </div>
+            </div>
+            <div class="container mx-auto flex flex-wrap md:flex-nowrap md:items-center my-8 md:my-24">
+            <div data-aos="fade-right" data-aos-delay="600" class="md:w-1/2 flex center-element aos-init aos-animate">
+            <div class="content-text pl-4">
+            <div class="text-honing font-bold pb-2 text-support-sm sm:text-support">Ben je op zoek naar nieuwe klanten?</div>
+            <div class="text-blue leading-none text-t2-2-sm  sm:text-t3 mb-2"><span class="font-bold">Meer klanten, minder moeite</span></div>
+            <div class="text-blue leading-tight text-body-1-sm sm:text-body-4 font-medium mb-12">Het draaiende houden van je business is al werk genoeg. Laat ons je helpen met het vinden van nieuwe klanten die bij je passen. Daarnaast heb je bij Offerte.nl tools en tips tot je beschikking om het beste uit je bedrijf te halen.</div>
+            <a href="https://offerte.nl/over-ons" class="flex justify-center btn-simple-large">Meer over ons</a>
+            </div>
+            </div>
+            <div class="w-full md:w-1/2 order-first md:order-none flex end-element center-element">
+            <img data-aos="fade-left" class="flex-shrink-0 rounded my-8 md:my-0 aos-init aos-animate" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/over-ons-2.webp" onerror="this.onerror=null; this.src='https://dum4ea6o0zrjv.cloudfront.net/img/website/over-ons-2.jpg'">
+            </div>
+            </div>
+            </div>
+    </section>
+    
+    <section>
+        <div class="sm:pt-48 py-12 md:pb-32 my-12 bg-lucht text-wit rounding-top-left-lg rounding-bottom-left-lg rounding-top-right-lucht rounding-bottom-right-lucht bg-pills-height">
+            <div class="container mx-auto md:flex md:items-center">
+            <div data-aos="fade-left" data-aos-delay="600" class="md:w-1/2 md:px-12 lg:px-24 md:hidden block text-center mb-32 aos-init aos-animate">
+            <div class="sm:text-support text-support-sm text-yellow text-center">Als partner van Offerte.nl</div>
+            <h3 class="sm:text-t3 text-t2-2-sm text-white heading-center pb-8">Versterking is onderweg</h3>
+            <p class="sm:text-body-4 px-6 sm:px-0 mt-4 text-body-1-sm">
+            Als partner van Offerte.nl zorgen we voor jouw zaak alsof het die van ons is. Jij focust op de kern van je bedrijf en wij reiken je nieuwe klanten aan. Krijg toegang tot de beste tools, een overzichtelijk dashboard en een toegewijd team aan matchmakers die dag en nacht voor je klaar staan.
+            </p>
+            </div>
+            <div class="md:w-1/2 px-6 lg:px-12">
+            <div data-aos="fade-right" class="bg-white rounded px-4 py-8 lg:px-16 overflow-visible aos-init aos-animate">
+            <div class="customers-carousel slick-initialized slick-slider slick-dotted">
+            <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 842px;"><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide10" aria-describedby="slick-slide-control10" style="width: 421px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
+            <img width="100%" height="100%" class="rounded-full mx-auto w-48 h-48 border-wit" style="margin-top: -115px; border-width: 17px;" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/review_1.jpg" alt="">
+            <img width="100%" height="100%" class="h-24 mx-auto" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/bflex.svg" alt="BFlex">
+            <div class="sm:text-body-3 text-nacht text-body-1-sm sm:my-12 my-6 text-center">Offerte.nl is voor ons een extra marketing kanaal. Wij hebben inmiddels al meer dan 225 offerteaanvragen ontvangen en zijn al twee jaar trotse partner</div>
+            <div class="sm:text-body-3 text-nacht text-center text-lg text-body-1-sm mt-4"><span class="font-bold">Nasima el Bachiri </span> - B Flex Cleaning</div>
+            </div><div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide11" aria-describedby="slick-slide-control11" style="width: 421px; position: relative; left: -421px; top: 0px; z-index: 998; opacity: 0;">
+            <img width="100%" height="100%" class="rounded-full mx-auto w-48 h-48 border-wit" style="margin-top: -115px; border-width: 17px;" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/review_2.jpg" alt="">
+            <img width="100%" height="100%" class="h-24 mx-auto" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/cleanbuilding.svg" alt="Clean Building">
+            <div class="sm:text-body-3 text-nacht text-body-1-sm sm:my-12 my-6 text-center">Wij halen er hele mooie klussen uit, wij gaan daarom ook
+            <br>nooit meer weg bij Offerte.nl.</div>
+            <div class="sm:text-body-3 text-nacht text-center text-lg text-body-1-sm mt-4"><span class="font-bold">Olaf Cordemeijer</span> - Clean Building</div>
+            </div></div></div>
+            
+            <ul class="slick-dots"  role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control10" aria-controls="slick-slide10" aria-label="1 of 2" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control11" aria-controls="slick-slide11" aria-label="2 of 2" tabindex="-1">2</button></li></ul></div>
+            </div>
+            </div>
+            <div class="md:hidden">
+            <div class="text-t4 text-center md:text-left mt-8">Bekend van</div>
+            <div class="flex items-center justify-center lg:justify-start flex-wrap lg:flex-nowrap mt-8">
+            <img class="flex-shrink-0 h-12 lg:h-16" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/references/ad.svg" alt="AD">
+            <img class="flex-shrink-0 h-12 lg:h-16" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/references/veronica.svg" alt="Radio Veronica">
+            <img class="flex-shrink-0 h-12 lg:h-16" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/references/rtl.svg" alt="RTL">
+            </div>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="600" class="md:w-1/2 md:px-12 lg:px-24 hidden md:block aos-init aos-animate">
+            <div class="sm:text-support text-yellow">Als partner van Offerte.nl</div>
+            <h3 class="sm:text-t3 text-white heading-left pb-8">Versterking is onderweg</h3>
+            <p class="sm:text-body-4 mt-4">
+            Als partner van Offerte.nl zorgen we voor jouw zaak alsof het die van ons is. Jij focust op de kern van je bedrijf en wij reiken je nieuwe klanten aan. Krijg toegang tot de beste tools, een overzichtelijk dashboard en een toegewijd team aan matchmakers die dag en nacht voor je klaar staan.
+            </p>
+            <div class="text-t4 text-center md:text-left mt-8">Bekend van</div>
+            <div class="flex items-center justify-center lg:justify-start flex-wrap lg:flex-nowrap mt-8">
+            <img class="flex-shrink-0 h-12 lg:h-16" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/references/ad.svg" alt="AD">
+            <img class="flex-shrink-0 h-12 lg:h-16" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/references/veronica.svg" alt="Radio Veronica">
+            <img class="flex-shrink-0 h-12 lg:h-16" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/references/rtl.svg" alt="RTL">
+            </div>
+            </div>
+            </div>
+            </div>
+    </section>
+
+    <section>
+        <div class="container mx-auto sm:mt-20 mt-10 mb-12">
+            <div class="flex flex-wrap justify-between">
+            <div class="sm:text-t3 text-t2-2-sm block sm:heading-left font-bold pb-6 sm:m-0 mx-auto">Onze laatste artikelen</div>
+            <div class="sm:block hidden">
+            <a href="https://offerte.nl/ondernemersgids" class="btn-simple-large sm:mt-0 mt-8 px-8">Bekijk alles</a>
+            </div>
+            </div>
+            <div data-aos="zoom-in-up" class="aos-init aos-animate">
+            <div class="articles-carousel sm:mt-16 mt-8 slick-initialized slick-slider slick-dotted">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 9519px; transform: translate3d(-4509px, 0px, 0px); transition: transform 500ms ease 0s;"><div class="slick-slide slick-cloned" style="width: 501px;" tabindex="-1" role="tabpanel" id="" aria-describedby="slick-slide-control04" data-slick-index="-1" aria-hidden="true">
+            <div class="bg-grijs sm:mx-0 mx-auto hover:bg-wit shadow-center rounded sm:mb-12 mb-6  ">
+            <img class="relative w-full rounded-t h-auto" src="https://dum4ea6o0zrjv.cloudfront.net/images/materials_images/0b3abde137dc8cf7ab48faf311e93bee341fab89_image.png" loading="lazy" alt="Monoblock airco installeren; Kosten, Voordelen en Nadelen">
+            <div class="flex flex-col justify-between py-6 px-8 w-full">
+            <div style="height: 50px" class="text-blue sm:text-body-4 text-body-1-sm leading-6 line-clamp-2 mb-2">
+            <span class="font-bold ">Monoblock airco installeren; Kosten, Voordelen en Nadelen</span>
+            </div>
+            <div class="sm:text-body-4 text-body-1-sm mb-4 line-clamp-2 sm:h-12 h-10">Ben je op zoek naar een airco voor slechts één ruimte? Dan is een monoblock airco een geschikte keuze! Lees hier alles over de kosten en meer!</div>
+            <a class="flex items-center text-blue hover:text-blue hover:no-underline mt-2 mb-4" href="/airco/monoblock" tabindex="-1">
+            <span class="flex hvr-underline-from-left-blue text-link">Lees verder</span>
+            <img class="w-4 h-4 ml-2" src="https://dum4ea6o0zrjv.cloudfront.net/img/frontend/icons/arrow-right-blue.svg" alt="Arrow">
+            </a>
+            </div>
+            </div>
+            </div><div class="slick-slide" style="width: 501px;" tabindex="-1" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00" data-slick-index="0" aria-hidden="true">
+            <div class="bg-grijs sm:mx-0 mx-auto hover:bg-wit shadow-center rounded sm:mb-12 mb-6  ">
+            <img class="relative w-full rounded-t h-auto" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/search_splash.jpg" loading="lazy" alt="Terrasoverkapping: Prijzen, Materialen en meer">
+            <div class="flex flex-col justify-between py-6 px-8 w-full">
+            <div style="height: 50px" class="text-blue sm:text-body-4 text-body-1-sm leading-6 line-clamp-2 mb-2">
+            <span class="font-bold ">Terrasoverkapping: Prijzen, Materialen en meer</span>
+            </div>
+            <div class="sm:text-body-4 text-body-1-sm mb-4 line-clamp-2 sm:h-12 h-10">Met een terrasoverkapping bent u minder afhankelijk van weersomstandigheden. In dit artikel leest u alles wat betreft terrasoverkappingen!</div>
+            <a class="flex items-center text-blue hover:text-blue hover:no-underline mt-2 mb-4" href="/terrasoverkapping/terrasoverkapping" tabindex="-1">
+            <span class="flex hvr-underline-from-left-blue text-link">Lees verder</span>
+            <img class="w-4 h-4 ml-2" src="https://dum4ea6o0zrjv.cloudfront.net/img/frontend/icons/arrow-right-blue.svg" alt="Arrow">
+            </a>
+            </div>
+            </div>
+            </div><div class="slick-slide" style="width: 501px;" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01" data-slick-index="1" aria-hidden="true">
+            <div class="bg-grijs sm:mx-0 mx-auto hover:bg-wit shadow-center rounded sm:mb-12 mb-6  ">
+            <img class="relative w-full rounded-t h-auto" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/search_splash.jpg" loading="lazy" alt="Terrasoverkapping: Prijzen, Materialen en meer">
+            <div class="flex flex-col justify-between py-6 px-8 w-full">
+            <div style="height: 50px" class="text-blue sm:text-body-4 text-body-1-sm leading-6 line-clamp-2 mb-2">
+            <span class="font-bold ">Terrasoverkapping: Prijzen, Materialen en meer</span>
+            </div>
+            <div class="sm:text-body-4 text-body-1-sm mb-4 line-clamp-2 sm:h-12 h-10">Met een terrasoverkapping bent u minder afhankelijk van weersomstandigheden. In dit artikel leest u alles wat betreft terrasoverkappingen!</div>
+            <a class="flex items-center text-blue hover:text-blue hover:no-underline mt-2 mb-4" href="/terrasoverkapping/" tabindex="-1">
+            <span class="flex hvr-underline-from-left-blue text-link">Lees verder</span>
+            <img class="w-4 h-4 ml-2" src="https://dum4ea6o0zrjv.cloudfront.net/img/frontend/icons/arrow-right-blue.svg" alt="Arrow">
+            </a>
+            </div>
+            </div>
+            </div><div class="slick-slide" style="width: 501px;" tabindex="-1" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02" data-slick-index="2" aria-hidden="true">
+            <div class="bg-grijs sm:mx-0 mx-auto hover:bg-wit shadow-center rounded sm:mb-12 mb-6  ">
+            <img class="relative w-full rounded-t h-auto" src="https://dum4ea6o0zrjv.cloudfront.net/images/materials_images/ca0505112b33d0c9ed5c46bde18dd028efd63b42_image.jpg" loading="lazy" alt="Gevelreiniging: alle informatie + kosten">
+            <div class="flex flex-col justify-between py-6 px-8 w-full">
+            <div style="height: 50px" class="text-blue sm:text-body-4 text-body-1-sm leading-6 line-clamp-2 mb-2">
+            <span class="font-bold ">Gevelreiniging: alle informatie + kosten</span>
+            </div>
+            <div class="sm:text-body-4 text-body-1-sm mb-4 line-clamp-2 sm:h-12 h-10">Over de jaren heen krijgen jouw gevels heel wat te verduren. In dit artikel lees je alles over de verschillende opties van gevelreiniging en de bijbehorende prijzen.</div>
+            <a class="flex items-center text-blue hover:text-blue hover:no-underline mt-2 mb-4" href="/gevel-reiniging/" tabindex="-1">
+            <span class="flex hvr-underline-from-left-blue text-link">Lees verder</span>
+            <img class="w-4 h-4 ml-2" src="https://dum4ea6o0zrjv.cloudfront.net/img/frontend/icons/arrow-right-blue.svg" alt="Arrow">
+            </a>
+            </div>
+            </div>
+            </div><div class="slick-slide" style="width: 501px;" tabindex="-1" role="tabpanel" id="slick-slide03" aria-describedby="slick-slide-control03" data-slick-index="3" aria-hidden="true">
+            <div class="bg-grijs sm:mx-0 mx-auto hover:bg-wit shadow-center rounded sm:mb-12 mb-6  ">
+            <img class="relative w-full rounded-t h-auto" src="https://dum4ea6o0zrjv.cloudfront.net/images/materials_images/5628375300d4b04b7cea63d44ebd4d4be807324b_image.png" loading="lazy" alt="Airco soorten overzicht">
+            <div class="flex flex-col justify-between py-6 px-8 w-full">
+            <div style="height: 50px" class="text-blue sm:text-body-4 text-body-1-sm leading-6 line-clamp-2 mb-2">
+            <span class="font-bold ">Airco soorten overzicht</span>
+            </div>
+            <div class="sm:text-body-4 text-body-1-sm mb-4 line-clamp-2 sm:h-12 h-10">Er zijn veel verschillende soorten airco’s en merken airco’s die je kunt kopen. In dit artikel behandelen we ieder type.</div>
+            <a class="flex items-center text-blue hover:text-blue hover:no-underline mt-2 mb-4" href="/airco/soorten" tabindex="-1">
+            <span class="flex hvr-underline-from-left-blue text-link">Lees verder</span>
+            <img class="w-4 h-4 ml-2" src="https://dum4ea6o0zrjv.cloudfront.net/img/frontend/icons/arrow-right-blue.svg" alt="Arrow">
+            </a>
+            </div>
+            </div>
+            </div><div class="slick-slide" style="width: 501px;" tabindex="-1" role="tabpanel" id="slick-slide04" aria-describedby="slick-slide-control04" data-slick-index="4" aria-hidden="true">
+            <div class="bg-grijs sm:mx-0 mx-auto hover:bg-wit shadow-center rounded sm:mb-12 mb-6  ">
+            <img class="relative w-full rounded-t h-auto" src="https://dum4ea6o0zrjv.cloudfront.net/images/materials_images/ac66a3574637e92c390c6091668d3b979b71bf82_image.png" loading="lazy" alt="Laadpaal subsidie 2022 - Zakelijk en Particulier">
+            <div class="flex flex-col justify-between py-6 px-8 w-full">
+            <div style="height: 50px" class="text-blue sm:text-body-4 text-body-1-sm leading-6 line-clamp-2 mb-2">
+            <span class="font-bold ">Laadpaal subsidie 2022 - Zakelijk en Particulier</span>
+            </div>
+            <div class="sm:text-body-4 text-body-1-sm mb-4 line-clamp-2 sm:h-12 h-10">In dit artikel bespreken we alle beschikbare laadpaal subsidies 2022 voor zowel bedrijven, zzp'ers en particulieren.</div>
+            <a class="flex items-center text-blue hover:text-blue hover:no-underline mt-2 mb-4" href="/laadpaal/subsidie" tabindex="-1">
+            <span class="flex hvr-underline-from-left-blue text-link">Lees verder</span>
+            <img class="w-4 h-4 ml-2" src="https://dum4ea6o0zrjv.cloudfront.net/img/frontend/icons/arrow-right-blue.svg" alt="Arrow">
+            </a>
+            </div>
+            </div>
+            </div><div class="slick-slide" style="width: 501px;" tabindex="-1" role="tabpanel" id="slick-slide05" aria-describedby="slick-slide-control05" data-slick-index="5" aria-hidden="true">
+            <div class="bg-grijs sm:mx-0 mx-auto hover:bg-wit shadow-center rounded sm:mb-12 mb-6  ">
+            <img class="relative w-full rounded-t h-auto" src="https://dum4ea6o0zrjv.cloudfront.net/images/materials_images/433e54cb2671341eb8314490520ff4b445e62376_image.png" loading="lazy" alt="Warmtepomp merken: compleet overzicht">
+            <div class="flex flex-col justify-between py-6 px-8 w-full">
+            <div style="height: 50px" class="text-blue sm:text-body-4 text-body-1-sm leading-6 line-clamp-2 mb-2">
+            <span class="font-bold ">Warmtepomp merken: compleet overzicht</span>
+            </div>
+            <div class="sm:text-body-4 text-body-1-sm mb-4 line-clamp-2 sm:h-12 h-10">Alleen Nederland beschikt er al over zo'n 138 warmtepomp merken. Welke merken zijn dit precies? En voor welk merk kan je het beste kiezen? In dit artikel lees je het!</div>
+            <a class="flex items-center text-blue hover:text-blue hover:no-underline mt-2 mb-4" href="/warmtepompen/merken" tabindex="-1">
+            <span class="flex hvr-underline-from-left-blue text-link">Lees verder</span>
+            <img class="w-4 h-4 ml-2" src="https://dum4ea6o0zrjv.cloudfront.net/img/frontend/icons/arrow-right-blue.svg" alt="Arrow">
+            </a>
+            </div>
+            </div>
+            </div><div class="slick-slide" style="width: 501px;" tabindex="-1" role="tabpanel" id="slick-slide06" aria-describedby="slick-slide-control06" data-slick-index="6" aria-hidden="true">
+            <div class="bg-grijs sm:mx-0 mx-auto hover:bg-wit shadow-center rounded sm:mb-12 mb-6  ">
+            <img class="relative w-full rounded-t h-auto" src="https://dum4ea6o0zrjv.cloudfront.net/images/materials_images/8f6e73e67f83a2c77f7c8ec0298614aef0e56970_image.png" loading="lazy" alt="Laadpaal voor je bedrijf">
+            <div class="flex flex-col justify-between py-6 px-8 w-full">
+            <div style="height: 50px" class="text-blue sm:text-body-4 text-body-1-sm leading-6 line-clamp-2 mb-2">
+            <span class="font-bold ">Laadpaal voor je bedrijf</span>
+            </div>
+            <div class="sm:text-body-4 text-body-1-sm mb-4 line-clamp-2 sm:h-12 h-10">Als bedrijf kun je een laadpalen plaatsen voor jouw klanten, bezoekers en medewerkers. Maar hoe werkt dit precies en wat kost een zakelijke laadpaal? Je leest het hier.</div>
+            <a class="flex items-center text-blue hover:text-blue hover:no-underline mt-2 mb-4" href="/laadpaal/zakelijk" tabindex="-1">
+            <span class="flex hvr-underline-from-left-blue text-link">Lees verder</span>
+            <img class="w-4 h-4 ml-2" src="https://dum4ea6o0zrjv.cloudfront.net/img/frontend/icons/arrow-right-blue.svg" alt="Arrow">
+            </a>
+            </div>
+            </div>
+            </div><div class="slick-slide" style="width: 501px;" tabindex="0" role="tabpanel" id="slick-slide07" aria-describedby="slick-slide-control07" data-slick-index="7" aria-hidden="true">
+            <div class="bg-grijs sm:mx-0 mx-auto hover:bg-wit shadow-center rounded sm:mb-12 mb-6  ">
+            <img class="relative w-full rounded-t h-auto" src="https://dum4ea6o0zrjv.cloudfront.net/images/materials_images/007d1d5904d67b0a8db237d5d617f4dde047c275_image.png" loading="lazy" alt="Airco installeren; de kosten uitgelegd">
+            <div class="flex flex-col justify-between py-6 px-8 w-full">
+            <div style="height: 50px" class="text-blue sm:text-body-4 text-body-1-sm leading-6 line-clamp-2 mb-2">
+            <span class="font-bold ">Airco installeren; de kosten uitgelegd</span>
+            </div>
+            <div class="sm:text-body-4 text-body-1-sm mb-4 line-clamp-2 sm:h-12 h-10">Wat kost het installeren en plaatsen van een airco? In dit artikel lees je er alles over, van de kosten voor aanschaf tot de installatiekosten!</div>
+            <a class="flex items-center text-blue hover:text-blue hover:no-underline mt-2 mb-4" href="/airco/kosten-installeren" tabindex="0">
+            <span class="flex hvr-underline-from-left-blue text-link">Lees verder</span>
+            <img class="w-4 h-4 ml-2" src="https://dum4ea6o0zrjv.cloudfront.net/img/frontend/icons/arrow-right-blue.svg" alt="Arrow">
+            </a>
+            </div>
+            </div>
+            </div><div class="slick-slide slick-current slick-active" style="width: 501px;" tabindex="-1" role="tabpanel" id="slick-slide08" aria-describedby="slick-slide-control08" data-slick-index="8" aria-hidden="false">
+            <div class="bg-grijs sm:mx-0 mx-auto hover:bg-wit shadow-center rounded sm:mb-12 mb-6  ">
+            <img class="relative w-full rounded-t h-auto" src="https://dum4ea6o0zrjv.cloudfront.net/images/materials_images/0b3abde137dc8cf7ab48faf311e93bee341fab89_image.png" loading="lazy" alt="Monoblock airco installeren; Kosten, Voordelen en Nadelen">
+            <div class="flex flex-col justify-between py-6 px-8 w-full">
+            <div style="height: 50px" class="text-blue sm:text-body-4 text-body-1-sm leading-6 line-clamp-2 mb-2">
+            <span class="font-bold ">Monoblock airco installeren; Kosten, Voordelen en Nadelen</span>
+            </div>
+            <div class="sm:text-body-4 text-body-1-sm mb-4 line-clamp-2 sm:h-12 h-10">Ben je op zoek naar een airco voor slechts één ruimte? Dan is een monoblock airco een geschikte keuze! Lees hier alles over de kosten en meer!</div>
+            <a class="flex items-center text-blue hover:text-blue hover:no-underline mt-2 mb-4" href="/airco/monoblock" tabindex="-1">
+            <span class="flex hvr-underline-from-left-blue text-link">Lees verder</span>
+            <img class="w-4 h-4 ml-2" src="https://dum4ea6o0zrjv.cloudfront.net/img/frontend/icons/arrow-right-blue.svg" alt="Arrow">
+            </a>
+            </div>
+            </div>
+            </div><div class="slick-slide slick-cloned" style="width: 501px;" tabindex="-1" role="tabpanel" id="" aria-describedby="slick-slide-control00" data-slick-index="9" aria-hidden="true">
+            <div class="bg-grijs sm:mx-0 mx-auto hover:bg-wit shadow-center rounded sm:mb-12 mb-6  ">
+            <img class="relative w-full rounded-t h-auto" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/search_splash.jpg" loading="lazy" alt="Terrasoverkapping: Prijzen, Materialen en meer">
+            <div class="flex flex-col justify-between py-6 px-8 w-full">
+            <div style="height: 50px" class="text-blue sm:text-body-4 text-body-1-sm leading-6 line-clamp-2 mb-2">
+            <span class="font-bold ">Terrasoverkapping: Prijzen, Materialen en meer</span>
+            </div>
+            <div class="sm:text-body-4 text-body-1-sm mb-4 line-clamp-2 sm:h-12 h-10">Met een terrasoverkapping bent u minder afhankelijk van weersomstandigheden. In dit artikel leest u alles wat betreft terrasoverkappingen!</div>
+            <a class="flex items-center text-blue hover:text-blue hover:no-underline mt-2 mb-4" href="/terrasoverkapping/terrasoverkapping" tabindex="-1">
+            <span class="flex hvr-underline-from-left-blue text-link">Lees verder</span>
+            <img class="w-4 h-4 ml-2" src="https://dum4ea6o0zrjv.cloudfront.net/img/frontend/icons/arrow-right-blue.svg" alt="Arrow">
+            </a>
+            </div>
+            </div>
+            </div><div class="slick-slide slick-cloned" style="width: 501px;" tabindex="-1" role="tabpanel" id="" aria-describedby="slick-slide-control01" data-slick-index="10" aria-hidden="true">
+            <div class="bg-grijs sm:mx-0 mx-auto hover:bg-wit shadow-center rounded sm:mb-12 mb-6  ">
+            <img class="relative w-full rounded-t h-auto" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/search_splash.jpg" loading="lazy" alt="Terrasoverkapping: Prijzen, Materialen en meer">
+            <div class="flex flex-col justify-between py-6 px-8 w-full">
+            <div style="height: 50px" class="text-blue sm:text-body-4 text-body-1-sm leading-6 line-clamp-2 mb-2">
+            <span class="font-bold ">Terrasoverkapping: Prijzen, Materialen en meer</span>
+            </div>
+            <div class="sm:text-body-4 text-body-1-sm mb-4 line-clamp-2 sm:h-12 h-10">Met een terrasoverkapping bent u minder afhankelijk van weersomstandigheden. In dit artikel leest u alles wat betreft terrasoverkappingen!</div>
+            <a class="flex items-center text-blue hover:text-blue hover:no-underline mt-2 mb-4" href="/terrasoverkapping/" tabindex="-1">
+            <span class="flex hvr-underline-from-left-blue text-link">Lees verder</span>
+            <img class="w-4 h-4 ml-2" src="https://dum4ea6o0zrjv.cloudfront.net/img/frontend/icons/arrow-right-blue.svg" alt="Arrow">
+            </a>
+            </div>
+            </div>
+            </div><div class="slick-slide slick-cloned" style="width: 501px;" tabindex="-1" role="tabpanel" id="" aria-describedby="slick-slide-control01" data-slick-index="11" aria-hidden="true">
+            <div class="bg-grijs sm:mx-0 mx-auto hover:bg-wit shadow-center rounded sm:mb-12 mb-6  ">
+            <img class="relative w-full rounded-t h-auto" src="https://dum4ea6o0zrjv.cloudfront.net/images/materials_images/ca0505112b33d0c9ed5c46bde18dd028efd63b42_image.jpg" loading="lazy" alt="Gevelreiniging: alle informatie + kosten">
+            <div class="flex flex-col justify-between py-6 px-8 w-full">
+            <div style="height: 50px" class="text-blue sm:text-body-4 text-body-1-sm leading-6 line-clamp-2 mb-2">
+            <span class="font-bold ">Gevelreiniging: alle informatie + kosten</span>
+            </div>
+            <div class="sm:text-body-4 text-body-1-sm mb-4 line-clamp-2 sm:h-12 h-10">Over de jaren heen krijgen jouw gevels heel wat te verduren. In dit artikel lees je alles over de verschillende opties van gevelreiniging en de bijbehorende prijzen.</div>
+            <a class="flex items-center text-blue hover:text-blue hover:no-underline mt-2 mb-4" href="/gevel-reiniging/" tabindex="-1">
+            <span class="flex hvr-underline-from-left-blue text-link">Lees verder</span>
+            <img class="w-4 h-4 ml-2" src="https://dum4ea6o0zrjv.cloudfront.net/img/frontend/icons/arrow-right-blue.svg" alt="Arrow">
+            </a>
+            </div>
+            </div>
+            </div><div class="slick-slide slick-cloned" style="width: 501px;" tabindex="-1" role="tabpanel" id="" aria-describedby="slick-slide-control03" data-slick-index="12" aria-hidden="true">
+            <div class="bg-grijs sm:mx-0 mx-auto hover:bg-wit shadow-center rounded sm:mb-12 mb-6  ">
+            <img class="relative w-full rounded-t h-auto" src="https://dum4ea6o0zrjv.cloudfront.net/images/materials_images/5628375300d4b04b7cea63d44ebd4d4be807324b_image.png" loading="lazy" alt="Airco soorten overzicht">
+            <div class="flex flex-col justify-between py-6 px-8 w-full">
+            <div style="height: 50px" class="text-blue sm:text-body-4 text-body-1-sm leading-6 line-clamp-2 mb-2">
+            <span class="font-bold ">Airco soorten overzicht</span>
+            </div>
+            <div class="sm:text-body-4 text-body-1-sm mb-4 line-clamp-2 sm:h-12 h-10">Er zijn veel verschillende soorten airco’s en merken airco’s die je kunt kopen. In dit artikel behandelen we ieder type.</div>
+            <a class="flex items-center text-blue hover:text-blue hover:no-underline mt-2 mb-4" href="/airco/soorten" tabindex="-1">
+            <span class="flex hvr-underline-from-left-blue text-link">Lees verder</span>
+            <img class="w-4 h-4 ml-2" src="https://dum4ea6o0zrjv.cloudfront.net/img/frontend/icons/arrow-right-blue.svg" alt="Arrow">
+            </a>
+            </div>
+            </div>
+            </div><div class="slick-slide slick-cloned" style="width: 501px;" tabindex="-1" role="tabpanel" id="" aria-describedby="slick-slide-control02" data-slick-index="13" aria-hidden="true">
+            <div class="bg-grijs sm:mx-0 mx-auto hover:bg-wit shadow-center rounded sm:mb-12 mb-6  ">
+            <img class="relative w-full rounded-t h-auto" src="https://dum4ea6o0zrjv.cloudfront.net/images/materials_images/ac66a3574637e92c390c6091668d3b979b71bf82_image.png" loading="lazy" alt="Laadpaal subsidie 2022 - Zakelijk en Particulier">
+            <div class="flex flex-col justify-between py-6 px-8 w-full">
+            <div style="height: 50px" class="text-blue sm:text-body-4 text-body-1-sm leading-6 line-clamp-2 mb-2">
+            <span class="font-bold ">Laadpaal subsidie 2022 - Zakelijk en Particulier</span>
+            </div>
+            <div class="sm:text-body-4 text-body-1-sm mb-4 line-clamp-2 sm:h-12 h-10">In dit artikel bespreken we alle beschikbare laadpaal subsidies 2022 voor zowel bedrijven, zzp'ers en particulieren.</div>
+            <a class="flex items-center text-blue hover:text-blue hover:no-underline mt-2 mb-4" href="/laadpaal/subsidie" tabindex="-1">
+            <span class="flex hvr-underline-from-left-blue text-link">Lees verder</span>
+            <img class="w-4 h-4 ml-2" src="https://dum4ea6o0zrjv.cloudfront.net/img/frontend/icons/arrow-right-blue.svg" alt="Arrow">
+            </a>
+            </div>
+            </div>
+            </div><div class="slick-slide slick-cloned" style="width: 501px;" tabindex="-1" role="tabpanel" id="" aria-describedby="slick-slide-control05" data-slick-index="14" aria-hidden="true">
+            <div class="bg-grijs sm:mx-0 mx-auto hover:bg-wit shadow-center rounded sm:mb-12 mb-6  ">
+            <img class="relative w-full rounded-t h-auto" src="https://dum4ea6o0zrjv.cloudfront.net/images/materials_images/433e54cb2671341eb8314490520ff4b445e62376_image.png" loading="lazy" alt="Warmtepomp merken: compleet overzicht">
+            <div class="flex flex-col justify-between py-6 px-8 w-full">
+            <div style="height: 50px" class="text-blue sm:text-body-4 text-body-1-sm leading-6 line-clamp-2 mb-2">
+            <span class="font-bold ">Warmtepomp merken: compleet overzicht</span>
+            </div>
+            <div class="sm:text-body-4 text-body-1-sm mb-4 line-clamp-2 sm:h-12 h-10">Alleen Nederland beschikt er al over zo'n 138 warmtepomp merken. Welke merken zijn dit precies? En voor welk merk kan je het beste kiezen? In dit artikel lees je het!</div>
+            <a class="flex items-center text-blue hover:text-blue hover:no-underline mt-2 mb-4" href="/warmtepompen/merken" tabindex="-1">
+            <span class="flex hvr-underline-from-left-blue text-link">Lees verder</span>
+            <img class="w-4 h-4 ml-2" src="https://dum4ea6o0zrjv.cloudfront.net/img/frontend/icons/arrow-right-blue.svg" alt="Arrow">
+            </a>
+            </div>
+            </div>
+            </div><div class="slick-slide slick-cloned" style="width: 501px;" tabindex="-1" role="tabpanel" id="" aria-describedby="slick-slide-control03" data-slick-index="15" aria-hidden="true">
+            <div class="bg-grijs sm:mx-0 mx-auto hover:bg-wit shadow-center rounded sm:mb-12 mb-6  ">
+            <img class="relative w-full rounded-t h-auto" src="https://dum4ea6o0zrjv.cloudfront.net/images/materials_images/8f6e73e67f83a2c77f7c8ec0298614aef0e56970_image.png" loading="lazy" alt="Laadpaal voor je bedrijf">
+            <div class="flex flex-col justify-between py-6 px-8 w-full">
+            <div style="height: 50px" class="text-blue sm:text-body-4 text-body-1-sm leading-6 line-clamp-2 mb-2">
+            <span class="font-bold ">Laadpaal voor je bedrijf</span>
+            </div>
+            <div class="sm:text-body-4 text-body-1-sm mb-4 line-clamp-2 sm:h-12 h-10">Als bedrijf kun je een laadpalen plaatsen voor jouw klanten, bezoekers en medewerkers. Maar hoe werkt dit precies en wat kost een zakelijke laadpaal? Je leest het hier.</div>
+            <a class="flex items-center text-blue hover:text-blue hover:no-underline mt-2 mb-4" href="/laadpaal/zakelijk" tabindex="-1">
+            <span class="flex hvr-underline-from-left-blue text-link">Lees verder</span>
+            <img class="w-4 h-4 ml-2" src="https://dum4ea6o0zrjv.cloudfront.net/img/frontend/icons/arrow-right-blue.svg" alt="Arrow">
+            </a>
+            </div>
+            </div>
+            </div><div class="slick-slide slick-cloned" style="width: 501px;" tabindex="-1" role="tabpanel" id="" aria-describedby="slick-slide-control07" data-slick-index="16" aria-hidden="true">
+            <div class="bg-grijs sm:mx-0 mx-auto hover:bg-wit shadow-center rounded sm:mb-12 mb-6  ">
+            <img class="relative w-full rounded-t h-auto" src="https://dum4ea6o0zrjv.cloudfront.net/images/materials_images/007d1d5904d67b0a8db237d5d617f4dde047c275_image.png" loading="lazy" alt="Airco installeren; de kosten uitgelegd">
+            <div class="flex flex-col justify-between py-6 px-8 w-full">
+            <div style="height: 50px" class="text-blue sm:text-body-4 text-body-1-sm leading-6 line-clamp-2 mb-2">
+            <span class="font-bold ">Airco installeren; de kosten uitgelegd</span>
+            </div>
+            <div class="sm:text-body-4 text-body-1-sm mb-4 line-clamp-2 sm:h-12 h-10">Wat kost het installeren en plaatsen van een airco? In dit artikel lees je er alles over, van de kosten voor aanschaf tot de installatiekosten!</div>
+            <a class="flex items-center text-blue hover:text-blue hover:no-underline mt-2 mb-4" href="/airco/kosten-installeren" tabindex="-1">
+            <span class="flex hvr-underline-from-left-blue text-link">Lees verder</span>
+            <img class="w-4 h-4 ml-2" src="https://dum4ea6o0zrjv.cloudfront.net/img/frontend/icons/arrow-right-blue.svg" alt="Arrow">
+            </a>
+            </div>
+            </div>
+            </div><div class="slick-slide slick-cloned" style="width: 501px;" tabindex="-1" role="tabpanel" id="" aria-describedby="slick-slide-control04" data-slick-index="17" aria-hidden="true">
+            <div class="bg-grijs sm:mx-0 mx-auto hover:bg-wit shadow-center rounded sm:mb-12 mb-6  ">
+            <img class="relative w-full rounded-t h-auto" src="https://dum4ea6o0zrjv.cloudfront.net/images/materials_images/0b3abde137dc8cf7ab48faf311e93bee341fab89_image.png" loading="lazy" alt="Monoblock airco installeren; Kosten, Voordelen en Nadelen">
+            <div class="flex flex-col justify-between py-6 px-8 w-full">
+            <div style="height: 50px" class="text-blue sm:text-body-4 text-body-1-sm leading-6 line-clamp-2 mb-2">
+            <span class="font-bold ">Monoblock airco installeren; Kosten, Voordelen en Nadelen</span>
+            </div>
+            <div class="sm:text-body-4 text-body-1-sm mb-4 line-clamp-2 sm:h-12 h-10">Ben je op zoek naar een airco voor slechts één ruimte? Dan is een monoblock airco een geschikte keuze! Lees hier alles over de kosten en meer!</div>
+            <a class="flex items-center text-blue hover:text-blue hover:no-underline mt-2 mb-4" href="/airco/monoblock" tabindex="-1">
+            <span class="flex hvr-underline-from-left-blue text-link">Lees verder</span>
+            <img class="w-4 h-4 ml-2" src="https://dum4ea6o0zrjv.cloudfront.net/img/frontend/icons/arrow-right-blue.svg" alt="Arrow">
+            </a>
+            </div>
+            </div>
+            </div></div></div><ul class="slick-dots"  role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 9" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 9" tabindex="-1">2</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 9" tabindex="-1">3</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide03" aria-label="4 of 9" tabindex="-1">4</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control04" aria-controls="slick-slide04" aria-label="5 of 9" tabindex="-1">5</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control05" aria-controls="slick-slide05" aria-label="6 of 9" tabindex="-1">6</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control06" aria-controls="slick-slide06" aria-label="7 of 9" tabindex="-1">7</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control07" aria-controls="slick-slide07" aria-label="8 of 9" tabindex="0" aria-selected="true">8</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control08" aria-controls="slick-slide08" aria-label="9 of 9" tabindex="-1">9</button></li></ul></div>
+            </div>
+            <div class="sm:hidden block text-center">
+            <a href="https://offerte.nl/ondernemersgids" class="btn-simple-large sm:mt-0 mx-auto mt-4 px-8">Bekijk alles</a>
+            </div>
+            </div>
+    </section>
+    <section>
+        <footer class="bg-nacht text-wit h-30 w-full pt-10 md:pt-32 pb-8 rounding-top-right rounding-top-left-lg">
+            <div class="container mx-auto">
+            <div class="block md:hidden mb-10">
+            <div class="font-bold text-center text-t2-2-sm">Hulp nodig?<br> Wij helpen graag</div>
+            <div class="flex items-center justify-center mt-8">
+            <a class="btn-white-small px-6 mx-2" href="https://offerte.nl/over-ons">Over ons</a>
+            <a class="btn-yellow-small px-6 mx-2" href="https://offerte.nl/over-ons">Contact</a>
+            </div>
+            </div>
+            <div class="flex sm:flex-row flex-col-reverse  px-8 md:px-0 tracking-tighter">
+            <div class="md:w-1/4 md:mr-16 font-medium text-xl rounded ">
+            <a class="text-wit hover:text-wit" href="https://offerte.nl">
+            <img class="sm:block hidden md:h-12 h-8 block" src="https://dum4ea6o0zrjv.cloudfront.net/img/website/logo-nacht.svg" alt="Offerte.nl">
+            <span class="sm:hidden block font-bold block sm:text-t4 text-t2-2-sm ">Offerte.nl</span>
+            </a>
+            <div class="sm:mt-8 mt-2 flex items-center">
+            <p class="m-0 sm:text-body-3 text-body-1-sm">Wij helpen MKB groeien</p>
+            </div>
+            <div class="sm:mt-8 mt-2 flex items-center">
+            <object data="https://dum4ea6o0zrjv.cloudfront.net/img/icons/mail.svg" class="mr-4 my-2 h-4" type="image/svg+xml"></object>
+            <p class="m-0 sm:text-body-3 text-body-1-sm">info@offerte.nl</p>
+            </div>
+            <div class="flex items-center">
+            <object data="https://dum4ea6o0zrjv.cloudfront.net/img/icons/phone-wit.svg" class="mr-4 my-2 h-4" type="image/svg+xml"></object>
+            <p class="m-0 sm:text-body-3 text-body-1-sm">020 - 895 17 09</p>
+            </div>
+            <div class="mt-8 flex sm:justify-start justify-center">
+            <a href="https://www.instagram.com/offerte.nl" target="_blank" rel="noopener"><img width="32px" height="32px" class="mr-3" src="https://dum4ea6o0zrjv.cloudfront.net/img/icons/instagram-white.svg" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/company/offerte-b-v-" target="_blank" rel="noopener"><img width="32px" height="32px" class="mr-3" src="https://dum4ea6o0zrjv.cloudfront.net/img/icons/linkedin-white.svg" alt="Linkedin"></a>
+            <a href="https://www.facebook.com/Offerte.nl" target="_blank" rel="noopener"><img width="32px" height="32px" class="mr-3" src="https://dum4ea6o0zrjv.cloudfront.net/img/icons/facebook-white.svg" alt="Facebook"></a>
+            <a href="https://wa.me/31643845908?text=Ik%20heb%20een%20vraag%20over%20OfferteNL" target="_blank" rel="noopener"><img width="32px" height="32px" class="mr-3" src="https://dum4ea6o0zrjv.cloudfront.net/img/icons/whats-white.svg" alt="WhatsApp"></a>
+            </div>
+            </div>
+            <div class="md:w-1/4 w-1/2 md:mx-4 font-medium md:text-xl sm:mb-0 mb-8">
+            <span class="font-bold block sm:text-t4 text-t2-2-sm">Locaties</span>
+            <ul class="mt-3 md:mt-6 list-none">
+            <li class="sm:text-body-3 text-body-1-sm text-wit pb-1"><span class="font-bold">Nederland</span></li>
+            <li class="sm:text-body-3 text-body-1-sm text-wit font-medium pb-1">Westeinde 12
+            1017 ZN</li>
+            <li class="sm:text-body-3 text-body-1-sm text-wit font-medium pb-1">Amsterdam</li>
+            </ul>
+            <ul class="mt-3 md:mt-6 list-none">
+            <li class="sm:text-body-3 text-body-1-sm text-wit pb-1"><span class="font-bold">Belgie</span></li>
+            <li class="sm:text-body-3 text-body-1-sm text-wit font-medium pb-1">Brusselstraat 51
+            2018</li>
+            <li class="sm:text-body-3 text-body-1-sm text-wit font-medium pb-1">
+            Antwerpen
+            <a href="https://offerte.be" class="sm:text-body-3 text-body-1-sm text-wit font-medium pb-1 underline hover:text-wit"><span class="font-bold ml-1">Offerte.be</span></a>
+            </li>
+            </ul>
+            </div>
+            <div class="md:w-1/4 w-1/2 md:mx-4 font-medium md:text-xl sm:mb-0 mb-8">
+            <span class="font-bold block sm:text-t4 text-t2-2-sm">Partners</span>
+            <ul class="mt-3 md:mt-6 list-none">
+            <li><a class="sm:text-body-3 text-body-1-sm text-wit font-medium pb-1 hover:text-wit hover:no-underline hvr-underline-from-left" href="https://offerte.nl/bedrijf-aanmelden">Aanmelden als partner</a></li>
+            <li><a class="sm:text-body-3 text-body-1-sm text-wit font-medium pb-1 hover:text-wit hover:no-underline hvr-underline-from-left" href="https://offerte.nl/veelgestelde-vragen/partners">Veelgestelde vragen</a></li>
+            <li><a class="sm:text-body-3 text-body-1-sm text-wit font-medium pb-1 hover:text-wit hover:no-underline hvr-underline-from-left" href="https://mijn.offerte.nl/login">Inloggen</a></li>
+            <li><a class="sm:text-body-3 text-body-1-sm text-wit font-medium pb-1 hover:text-wit hover:no-underline hvr-underline-from-left" href="https://offerte.nl/ondernemersgids">Ondernemersgids</a></li>
+            </ul>
+            </div>
+            <div class="md:w-1/4 sm:w-1/2 md:mx-4 font-medium md:text-xl sm:mb-0 mb-8">
+            <span class="font-bold block sm:text-t4 text-t2-2-sm">Over ons</span>
+            <ul class="mt-3 md:mt-6 list-none">
+            <li><a class="sm:text-body-3 text-body-1-sm  text-wit font-medium pb-1 hover:text-wit hover:no-underline hvr-underline-from-left" href="https://offerte.nl/over-ons">Over ons / Contact</a></li>
+            <li><a class="sm:text-body-3 text-body-1-sm  text-wit font-medium pb-1 hover:text-wit hover:no-underline hvr-underline-from-left" href="https://offerte.nl/het-team">Het team</a></li>
+            <li><a class="sm:text-body-3 text-body-1-sm  text-wit font-medium pb-1 hover:text-wit hover:no-underline hvr-underline-from-left" href="https://offerte.nl/veelgestelde-vragen">Veelgestelde vragen</a></li>
+            <li><a class="sm:text-body-3 text-body-1-sm  text-wit font-medium pb-1 hover:text-wit hover:no-underline hvr-underline-from-left" href="https://offerte.nl/vacatures">Vacatures</a></li>
+            </ul>
+            </div>
+            </div>
+            <div class="md:flex px-4 md:px-0 mt-8 md:mt-16 md:items-center md:justify-center leading-none">
+            <div class="sm:flex flex-wrap">
+            <a class="sm:hidden block hover:text-wit text-wit text-center font-medium text-body-1-sm mr-4 mb-2" href="https://offerte.nl/algemene-voorwaarden">Algemene voorwaarden</a>
+            <a class="sm:hidden block hover:text-wit text-wit text-center font-medium text-body-1-sm mr-4 mb-2" href="https://offerte.nl/privacy-statement">Privacy</a>
+            <div class="sm:hidden hover:text-wit text-wit text-center font-medium text-body-1-sm mr-4 mb-2">
+            KvK: 63835746
+            </div>
+            <div class="sm:hidden hover:text-wit text-wit text-center font-medium text-body-1-sm mr-4 mb-2">
+            BTW: NL855421368B01
+            </div>
+            <p class="sm:m-0 mx-auto block font-bold mt-0 text-center md:text-left md:mr-12 sm:text-body-3 text-body-1-sm mb-2">© Copyright 2011-2022 Offerte B.V.</p>
+            <a class="sm:block hidden hover:text-wit text-wit font-medium text-body-3 mr-4 mb-2" href="https://offerte.nl/algemene-voorwaarden">Algemene voorwaarden</a>
+            <a class="sm:block hidden hover:text-wit text-wit font-medium text-body-3 mr-4 mb-2" href="https://offerte.nl/privacy-statement">Privacy</a>
+            <div class="sm:block hidden hover:text-wit text-wit font-medium text-body-3 mr-4 mb-2">
+            KvK: 63835746
+            </div>
+            <div class="sm:block hidden hover:text-wit text-wit font-medium text-body-3 mr-4 mb-2">
+            BTW: NL855421368B01
+            </div>
+            </div>
+            </div>
+            </div>
+            </footer>
+    </section>
+</body>
+</html>
